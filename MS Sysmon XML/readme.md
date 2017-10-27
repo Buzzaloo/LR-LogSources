@@ -1,6 +1,6 @@
 # Microsoft Sysmon XML Format
 
-This repository includes custom MPE rules for Microsoft's Sysmon, v6+. The difference from the in-built rules available with LogRhythm are that it uses the Windows native XML format, which is more performant, and also makes use of the newer metadata fields available from LogRhythm 7.2.x onwards.
+This repository includes custom MPE rules for Microsoft's Sysmon, v6+. The difference from in-built rules available with LogRhythm is that they use the Windows native XML format, more performant, and  makes use of the newer metadata fields available from LogRhythm 7.2.x onwards.
 
 Other customizations include:
 *	parsing ProcessGuid into the Session metadata field
