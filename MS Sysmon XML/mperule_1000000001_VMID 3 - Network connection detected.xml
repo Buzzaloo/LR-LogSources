@@ -1,0 +1,308 @@
+<?xml version="1.0" standalone="yes"?>
+<RuleDataset>
+  <ExportInfo>
+    <ExportConsoleVersion>7.3.1.0</ExportConsoleVersion>
+    <KBVersion>7.1.413.2</KBVersion>
+    <DateExported>2017-10-27T12:55:48.3825371-07:00</DateExported>
+    <ExportLicense>646</ExportLicense>
+    <ExportUser>logrhythmadmin</ExportUser>
+  </ExportInfo>
+  <MPERule>
+    <MPERuleID>1000000001</MPERuleID>
+    <MPERuleRegexID>1000000001</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1028050</CommonEventID>
+    <CommonEventName>Network Connection Established</CommonEventName>
+    <MsgClassID>3520</MsgClassID>
+    <Name>VMID 3 - Network connection detected</Name>
+    <FullName>VMID 3 - Network connection detected</FullName>
+    <BaseRule>1</BaseRule>
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2017-10-27T02:51:04.083-07:00</DateUpdated>
+    <SortOrder>1</SortOrder>
+    <VersionMajor>6</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>1</SHostIs>
+    <DHostIs>1</DHostIs>
+    <ServiceIs>-1</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <DefLogMartMode>13627390</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000002</MPERuleID>
+    <MPERuleRegexID>1000000001</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1027562</CommonEventID>
+    <CommonEventName>Outbound Connection Observed</CommonEventName>
+    <MsgClassID>3520</MsgClassID>
+    <Name>VMID 3 - Initiated Connection</Name>
+    <FullName>VMID 3 - Initiated Connection</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc />
+    <LongDesc />
+    <DefMsgTTL>0</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <MapTag1>=true</MapTag1>
+    <MapTag2>*</MapTag2>
+    <MapTag3>*</MapTag3>
+    <MapTag4>*</MapTag4>
+    <MapTag5>*</MapTag5>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>0</RecordStatus>
+    <DateUpdated>2017-10-27T02:51:04.083-07:00</DateUpdated>
+    <SortOrder>1000000000</SortOrder>
+    <VersionMajor>6</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>1</SHostIs>
+    <DHostIs>1</DHostIs>
+    <ServiceIs>-1</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>*</MapVMID>
+    <MapSIP>*</MapSIP>
+    <MapDIP>*</MapDIP>
+    <MapSName>*</MapSName>
+    <MapDName>*</MapDName>
+    <MapSPort>*</MapSPort>
+    <MapDPort>*</MapDPort>
+    <MapProtocolID>*</MapProtocolID>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapProcess>*</MapProcess>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000003</MPERuleID>
+    <MPERuleRegexID>1000000001</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1027553</CommonEventID>
+    <CommonEventName>Inbound Connection Observed</CommonEventName>
+    <MsgClassID>3520</MsgClassID>
+    <Name>VMID 3 - Non-Initiated Connection</Name>
+    <FullName>VMID 3 - Non-Initiated Connection</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc />
+    <LongDesc />
+    <DefMsgTTL>0</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <MapTag1>=false</MapTag1>
+    <MapTag2>*</MapTag2>
+    <MapTag3>*</MapTag3>
+    <MapTag4>*</MapTag4>
+    <MapTag5>*</MapTag5>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>0</RecordStatus>
+    <DateUpdated>2017-10-27T02:51:04.083-07:00</DateUpdated>
+    <SortOrder>1000000000</SortOrder>
+    <VersionMajor>6</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>1</SHostIs>
+    <DHostIs>1</DHostIs>
+    <ServiceIs>-1</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>*</MapVMID>
+    <MapSIP>*</MapSIP>
+    <MapDIP>*</MapDIP>
+    <MapSName>*</MapSName>
+    <MapDName>*</MapDName>
+    <MapSPort>*</MapSPort>
+    <MapDPort>*</MapDPort>
+    <MapProtocolID>*</MapProtocolID>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapProcess>*</MapProcess>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000004</MPERuleID>
+    <MPERuleRegexID>1000000001</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1027562</CommonEventID>
+    <CommonEventName>Outbound Connection Observed</CommonEventName>
+    <MsgClassID>3520</MsgClassID>
+    <Name>VMID 3 - IP6 Initiated Connection</Name>
+    <FullName>VMID 3 - IP6 Initiated Connection</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc />
+    <LongDesc />
+    <DefMsgTTL>0</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <MapTag1>=true</MapTag1>
+    <MapTag2>=true</MapTag2>
+    <MapTag3>*</MapTag3>
+    <MapTag4>*</MapTag4>
+    <MapTag5>*</MapTag5>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>0</RecordStatus>
+    <DateUpdated>2017-10-27T02:51:04.083-07:00</DateUpdated>
+    <SortOrder>1000000000</SortOrder>
+    <VersionMajor>6</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>1</SHostIs>
+    <DHostIs>1</DHostIs>
+    <ServiceIs>-1</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>*</MapVMID>
+    <MapSIP>*</MapSIP>
+    <MapDIP>*</MapDIP>
+    <MapSName>*</MapSName>
+    <MapDName>*</MapDName>
+    <MapSPort>*</MapSPort>
+    <MapDPort>*</MapDPort>
+    <MapProtocolID>*</MapProtocolID>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapProcess>*</MapProcess>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERule>
+    <MPERuleID>1000000005</MPERuleID>
+    <MPERuleRegexID>1000000001</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1027553</CommonEventID>
+    <CommonEventName>Inbound Connection Observed</CommonEventName>
+    <MsgClassID>3520</MsgClassID>
+    <Name>VMID 3 - IP6 Non-Initiated Connection</Name>
+    <FullName>VMID 3 - IP6 Non-Initiated Connection</FullName>
+    <BaseRule>0</BaseRule>
+    <ShortDesc />
+    <LongDesc />
+    <DefMsgTTL>0</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>0</DefForwarding>
+    <DefForwardingBool>false</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <MapTag1>=false</MapTag1>
+    <MapTag2>=true</MapTag2>
+    <MapTag3>*</MapTag3>
+    <MapTag4>*</MapTag4>
+    <MapTag5>*</MapTag5>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>0</RecordStatus>
+    <DateUpdated>2017-10-27T02:51:04.087-07:00</DateUpdated>
+    <SortOrder>1000000000</SortOrder>
+    <VersionMajor>6</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>1</SHostIs>
+    <DHostIs>1</DHostIs>
+    <ServiceIs>-1</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <MapVMID>*</MapVMID>
+    <MapSIP>*</MapSIP>
+    <MapDIP>*</MapDIP>
+    <MapSName>*</MapSName>
+    <MapDName>*</MapDName>
+    <MapSPort>*</MapSPort>
+    <MapDPort>*</MapDPort>
+    <MapProtocolID>*</MapProtocolID>
+    <MapLogin>*</MapLogin>
+    <MapSession>*</MapSession>
+    <MapProcess>*</MapProcess>
+    <MapObject>*</MapObject>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERuleRegex>
+    <MPERuleRegexID>1000000001</MPERuleRegexID>
+    <RegexTagged>(?&lt;vmid&gt;3)&lt;/eventid&gt;.*?&lt;level&gt;(?&lt;severity&gt;[^&lt;]+)&lt;/level&gt;.*?&lt;computer&gt;(?&lt;dname&gt;[^&lt;]+)&lt;/computer&gt;[^&gt;]+&gt;[^&gt;]+&gt;&lt;EventData&gt;[^&gt;]+&gt;[^&gt;]+&gt;&lt;Data Name='ProcessGuid'&gt;{(?&lt;session&gt;[^}]+)}&lt;/Data&gt;&lt;Data Name='ProcessId'&gt;(?&lt;processid&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='Image'&gt;(?&lt;object&gt;.*\\)?(?&lt;process&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='User'&gt;((?&lt;domainorigin&gt;[^\\]+)\\)?(?&lt;login&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='Protocol'&gt;(?&lt;protname&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='Initiated'&gt;(?&lt;action&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='SourceIsIpv6'&gt;(?&lt;tag2&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='SourceIp'&gt;(?&lt;sip&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='SourceHostname'&gt;(?&lt;sname&gt;[^&lt;]*)&lt;/Data&gt;&lt;Data Name='SourcePort'&gt;(?&lt;sport&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='SourcePortName'&gt;[^&lt;]*&lt;/Data&gt;&lt;Data Name='DestinationIsIpv6'&gt;(?&lt;tag4&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='DestinationIp'&gt;(?&lt;dip&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='DestinationHostname'&gt;(?&lt;dname&gt;[^&lt;]*)&lt;/Data&gt;&lt;Data Name='DestinationPort'&gt;(?&lt;dport&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='DestinationPortName'&gt;[^&lt;]*&lt;/Data&gt;&lt;/EventData&gt;&lt;/Event&gt;</RegexTagged>
+    <IgnoreCase>1</IgnoreCase>
+    <Multiline>0</Multiline>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2017-10-27T02:51:04.083-07:00</DateUpdated>
+    <PerfMonMode>1</PerfMonMode>
+    <VersionMajor>6</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+  </MPERuleRegex>
+  <MPERuleToMST>
+    <MsgSourceTypeID>1000639</MsgSourceTypeID>
+    <MPERuleRegexID>1000000001</MPERuleRegexID>
+    <SortOrder>34</SortOrder>
+    <AutoSort>0</AutoSort>
+  </MPERuleToMST>
+  <CommonEvent>
+    <CommonEventID>1027553</CommonEventID>
+    <MsgClassID>3520</MsgClassID>
+    <Name>Inbound Connection Observed</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2017-10-26T18:04:54.33-07:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1027562</CommonEventID>
+    <MsgClassID>3520</MsgClassID>
+    <Name>Outbound Connection Observed</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2017-10-26T18:04:54.33-07:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <CommonEvent>
+    <CommonEventID>1028050</CommonEventID>
+    <MsgClassID>3520</MsgClassID>
+    <Name>Network Connection Established</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2017-10-26T18:04:54.33-07:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <MsgSourceType>
+    <MsgSourceTypeID>1000639</MsgSourceTypeID>
+    <Name>MS Windows Event Logging XML - Security</Name>
+    <FullName>MS Windows Event Logging XML - Security</FullName>
+    <Abbreviation>WinEvtXML - Security</Abbreviation>
+    <ShortDesc>Slim format Windows Event Logs</ShortDesc>
+    <LongDesc />
+    <ParentMsgSourceTypeID>1</ParentMsgSourceTypeID>
+    <IsMst>1</IsMst>
+    <DateUpdated>2017-02-13T18:24:07.91-08:00</DateUpdated>
+    <MsgSourceFormat>28</MsgSourceFormat>
+    <RecordStatus>1</RecordStatus>
+  </MsgSourceType>
+</RuleDataset>

@@ -1,0 +1,82 @@
+<?xml version="1.0" standalone="yes"?>
+<RuleDataset>
+  <ExportInfo>
+    <ExportConsoleVersion>7.3.1.0</ExportConsoleVersion>
+    <KBVersion>7.1.413.2</KBVersion>
+    <DateExported>2017-10-27T12:58:25.9277472-07:00</DateExported>
+    <ExportLicense>646</ExportLicense>
+    <ExportUser>logrhythmadmin</ExportUser>
+  </ExportInfo>
+  <MPERule>
+    <MPERuleID>1000000010</MPERuleID>
+    <MPERuleRegexID>1000000006</MPERuleRegexID>
+    <RuleStatus>1</RuleStatus>
+    <StatusName>Production</StatusName>
+    <CommonEventID>1030062</CommonEventID>
+    <CommonEventName>Registry Changed</CommonEventName>
+    <MsgClassID>3400</MsgClassID>
+    <Name>VMID 13 - Registry Value Set</Name>
+    <FullName>VMID 13 - Registry Value Set</FullName>
+    <BaseRule>1</BaseRule>
+    <DefMsgTTL>32</DefMsgTTL>
+    <DefMsgArchiveMode>2</DefMsgArchiveMode>
+    <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
+    <DefForwarding>1</DefForwarding>
+    <DefForwardingBool>true</DefForwardingBool>
+    <DefRiskRating>0</DefRiskRating>
+    <DefFalseAlarmRating>0</DefFalseAlarmRating>
+    <InheritTech>1</InheritTech>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2017-10-26T23:40:52.25-07:00</DateUpdated>
+    <SortOrder>1</SortOrder>
+    <VersionMajor>6</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+    <SHostIs>0</SHostIs>
+    <DHostIs>1</DHostIs>
+    <ServiceIs>0</ServiceIs>
+    <HostContext>0</HostContext>
+    <PrefixBaseRuleName>0</PrefixBaseRuleName>
+    <IsSystemRule>No</IsSystemRule>
+    <NewRuleRecordType>0</NewRuleRecordType>
+    <DefLogMartMode>13627389</DefLogMartMode>
+  </MPERule>
+  <MPERuleRegex>
+    <MPERuleRegexID>1000000006</MPERuleRegexID>
+    <RegexTagged>(?&lt;vmid&gt;13)&lt;/eventid&gt;.*?&lt;level&gt;(?&lt;severity&gt;[^&lt;]+)&lt;/level&gt;.*?&lt;computer&gt;(?&lt;dname&gt;[^&lt;]+)&lt;/computer&gt;[^&gt;]+&gt;[^&gt;]+&gt;&lt;EventData&gt;[^&gt;]+&gt;(?&lt;tag1&gt;[^&lt;]+)[^&gt;]+&gt;[^&gt;]+&gt;[^&gt;]+&gt;&lt;Data Name='ProcessGuid'&gt;{(?&lt;session&gt;[^}]+)}&lt;/Data&gt;&lt;Data Name='ProcessId'&gt;(?&lt;processid&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='Image'&gt;(?&lt;object&gt;.*\\)?(?&lt;process&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='TargetObject'&gt;(?&lt;objectname&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='Details'&gt;(?&lt;result&gt;[^&lt;]+)&lt;/Data&gt;&lt;/EventData&gt;&lt;/Event&gt;</RegexTagged>
+    <IgnoreCase>1</IgnoreCase>
+    <Multiline>0</Multiline>
+    <RecordStatus>1</RecordStatus>
+    <DateUpdated>2017-10-26T23:40:52.25-07:00</DateUpdated>
+    <PerfMonMode>1</PerfMonMode>
+    <VersionMajor>6</VersionMajor>
+    <VersionMinor>1</VersionMinor>
+  </MPERuleRegex>
+  <MPERuleToMST>
+    <MsgSourceTypeID>1000639</MsgSourceTypeID>
+    <MPERuleRegexID>1000000006</MPERuleRegexID>
+    <SortOrder>39</SortOrder>
+    <AutoSort>0</AutoSort>
+  </MPERuleToMST>
+  <CommonEvent>
+    <CommonEventID>1030062</CommonEventID>
+    <MsgClassID>3400</MsgClassID>
+    <Name>Registry Changed</Name>
+    <ShortDesc />
+    <DefRiskRating>0</DefRiskRating>
+    <DateUpdated>2017-10-26T18:04:54.33-07:00</DateUpdated>
+    <RecordStatus>1</RecordStatus>
+  </CommonEvent>
+  <MsgSourceType>
+    <MsgSourceTypeID>1000639</MsgSourceTypeID>
+    <Name>MS Windows Event Logging XML - Security</Name>
+    <FullName>MS Windows Event Logging XML - Security</FullName>
+    <Abbreviation>WinEvtXML - Security</Abbreviation>
+    <ShortDesc>Slim format Windows Event Logs</ShortDesc>
+    <LongDesc />
+    <ParentMsgSourceTypeID>1</ParentMsgSourceTypeID>
+    <IsMst>1</IsMst>
+    <DateUpdated>2017-02-13T18:24:07.91-08:00</DateUpdated>
+    <MsgSourceFormat>28</MsgSourceFormat>
+    <RecordStatus>1</RecordStatus>
+  </MsgSourceType>
+</RuleDataset>

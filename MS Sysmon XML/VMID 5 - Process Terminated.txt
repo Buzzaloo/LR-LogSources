@@ -1,0 +1,1 @@
+(?<vmid>5)</eventid>.*?<level>(?<severity>[^<]+)</level>.*?<computer>(?<dname>[^<]+)</computer>[^>]+>[^>]+><EventData>[^>]+>[^>]+><Data Name='ProcessGuid'>{(?<session>[^}]+)}</Data><Data Name='ProcessId'>(?<processid>[^<]+)</Data><Data Name='Image'>(?<object>.*\\)?(?<process>[^<]+)</Data></EventData></Event>
