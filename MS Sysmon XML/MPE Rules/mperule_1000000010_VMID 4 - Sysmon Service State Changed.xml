@@ -3,20 +3,20 @@
   <ExportInfo>
     <ExportConsoleVersion>7.3.1.0</ExportConsoleVersion>
     <KBVersion>7.1.413.4</KBVersion>
-    <DateExported>2017-11-12T12:14:26.6820333-08:00</DateExported>
+    <DateExported>2017-11-12T12:12:16.1646028-08:00</DateExported>
     <ExportLicense>646</ExportLicense>
     <ExportUser>logrhythmadmin</ExportUser>
   </ExportInfo>
   <MPERule>
-    <MPERuleID>1000000007</MPERuleID>
-    <MPERuleRegexID>1000000003</MPERuleRegexID>
+    <MPERuleID>1000000015</MPERuleID>
+    <MPERuleRegexID>1000000010</MPERuleRegexID>
     <RuleStatus>1</RuleStatus>
     <StatusName>Production</StatusName>
-    <CommonEventID>14889</CommonEventID>
-    <CommonEventName>Process/Service Stopped</CommonEventName>
+    <CommonEventID>10404</CommonEventID>
+    <CommonEventName>Process/Service Started</CommonEventName>
     <MsgClassID>1400</MsgClassID>
-    <Name>VMID 5 - Process Terminated</Name>
-    <FullName>VMID 5 - Process Terminated</FullName>
+    <Name>VMID 4 - Sysmon Service State Changed</Name>
+    <FullName>VMID 4 - Sysmon Service State Changed</FullName>
     <BaseRule>1</BaseRule>
     <DefMsgTTL>32</DefMsgTTL>
     <DefMsgArchiveMode>2</DefMsgArchiveMode>
@@ -27,7 +27,7 @@
     <DefFalseAlarmRating>0</DefFalseAlarmRating>
     <InheritTech>1</InheritTech>
     <RecordStatus>1</RecordStatus>
-    <DateUpdated>2017-10-26T23:11:25.147-07:00</DateUpdated>
+    <DateUpdated>2017-11-10T18:34:04.627-08:00</DateUpdated>
     <SortOrder>1</SortOrder>
     <VersionMajor>6</VersionMajor>
     <VersionMinor>1</VersionMinor>
@@ -41,26 +41,26 @@
     <DefLogMartMode>13627389</DefLogMartMode>
   </MPERule>
   <MPERuleRegex>
-    <MPERuleRegexID>1000000003</MPERuleRegexID>
-    <RegexTagged>(?&lt;vmid&gt;5)&lt;/eventid&gt;.*?&lt;level&gt;(?&lt;severity&gt;[^&lt;]+)&lt;/level&gt;.*?&lt;computer&gt;(?&lt;dname&gt;[^&lt;]+)&lt;/computer&gt;[^&gt;]+&gt;[^&gt;]+&gt;&lt;EventData&gt;[^&gt;]+&gt;[^&gt;]+&gt;&lt;Data Name='ProcessGuid'&gt;{(?&lt;session&gt;[^}]+)}&lt;/Data&gt;&lt;Data Name='ProcessId'&gt;(?&lt;processid&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='Image'&gt;(?&lt;object&gt;.*\\)?(?&lt;process&gt;[^&lt;]+)&lt;/Data&gt;&lt;/EventData&gt;&lt;/Event&gt;</RegexTagged>
+    <MPERuleRegexID>1000000010</MPERuleRegexID>
+    <RegexTagged>(?&lt;vmid&gt;4)&lt;/eventid&gt;.*?&lt;level&gt;(?&lt;severity&gt;[^&lt;]+)&lt;/level&gt;.*?&lt;computer&gt;(?&lt;dname&gt;[^&lt;]+)&lt;/computer&gt;[^&gt;]+&gt;[^&gt;]+&gt;&lt;EventData&gt;[^&gt;]+&gt;[^&gt;]+&gt;&lt;Data Name='State'&gt;(?&lt;action&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='Version'&gt;[^&lt;]+&lt;/Data&gt;&lt;Data Name='SchemaVersion'&gt;[^&lt;]+&lt;/Data&gt;&lt;/EventData&gt;&lt;/Event&gt;</RegexTagged>
     <IgnoreCase>1</IgnoreCase>
     <Multiline>0</Multiline>
     <RecordStatus>1</RecordStatus>
-    <DateUpdated>2017-10-26T23:11:25.143-07:00</DateUpdated>
+    <DateUpdated>2017-11-10T18:34:04.627-08:00</DateUpdated>
     <PerfMonMode>1</PerfMonMode>
     <VersionMajor>6</VersionMajor>
     <VersionMinor>1</VersionMinor>
   </MPERuleRegex>
   <MPERuleToMST>
     <MsgSourceTypeID>1000639</MsgSourceTypeID>
-    <MPERuleRegexID>1000000003</MPERuleRegexID>
-    <SortOrder>36</SortOrder>
+    <MPERuleRegexID>1000000010</MPERuleRegexID>
+    <SortOrder>42</SortOrder>
     <AutoSort>0</AutoSort>
   </MPERuleToMST>
   <CommonEvent>
-    <CommonEventID>14889</CommonEventID>
+    <CommonEventID>10404</CommonEventID>
     <MsgClassID>1400</MsgClassID>
-    <Name>Process/Service Stopped</Name>
+    <Name>Process/Service Started</Name>
     <ShortDesc />
     <DefRiskRating>0</DefRiskRating>
     <DateUpdated>2017-10-26T18:04:54.33-07:00</DateUpdated>

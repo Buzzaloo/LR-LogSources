@@ -2,8 +2,8 @@
 <RuleDataset>
   <ExportInfo>
     <ExportConsoleVersion>7.3.1.0</ExportConsoleVersion>
-    <KBVersion>7.1.413.2</KBVersion>
-    <DateExported>2017-10-27T12:58:25.9277472-07:00</DateExported>
+    <KBVersion>7.1.413.4</KBVersion>
+    <DateExported>2017-11-12T12:27:43.3898164-08:00</DateExported>
     <ExportLicense>646</ExportLicense>
     <ExportUser>logrhythmadmin</ExportUser>
   </ExportInfo>
@@ -12,9 +12,9 @@
     <MPERuleRegexID>1000000006</MPERuleRegexID>
     <RuleStatus>1</RuleStatus>
     <StatusName>Production</StatusName>
-    <CommonEventID>1030062</CommonEventID>
-    <CommonEventName>Registry Changed</CommonEventName>
-    <MsgClassID>3400</MsgClassID>
+    <CommonEventID>1035613</CommonEventID>
+    <CommonEventName>Registry Monitoring Event - Modify</CommonEventName>
+    <MsgClassID>2900</MsgClassID>
     <Name>VMID 13 - Registry Value Set</Name>
     <FullName>VMID 13 - Registry Value Set</FullName>
     <BaseRule>1</BaseRule>
@@ -23,11 +23,11 @@
     <DefMsgArchiveModeBool>true</DefMsgArchiveModeBool>
     <DefForwarding>1</DefForwarding>
     <DefForwardingBool>true</DefForwardingBool>
-    <DefRiskRating>0</DefRiskRating>
+    <DefRiskRating>3</DefRiskRating>
     <DefFalseAlarmRating>0</DefFalseAlarmRating>
     <InheritTech>1</InheritTech>
     <RecordStatus>1</RecordStatus>
-    <DateUpdated>2017-10-26T23:40:52.25-07:00</DateUpdated>
+    <DateUpdated>2017-11-10T20:54:32.343-08:00</DateUpdated>
     <SortOrder>1</SortOrder>
     <VersionMajor>6</VersionMajor>
     <VersionMinor>1</VersionMinor>
@@ -46,7 +46,7 @@
     <IgnoreCase>1</IgnoreCase>
     <Multiline>0</Multiline>
     <RecordStatus>1</RecordStatus>
-    <DateUpdated>2017-10-26T23:40:52.25-07:00</DateUpdated>
+    <DateUpdated>2017-11-10T20:54:32.343-08:00</DateUpdated>
     <PerfMonMode>1</PerfMonMode>
     <VersionMajor>6</VersionMajor>
     <VersionMinor>1</VersionMinor>
@@ -58,11 +58,11 @@
     <AutoSort>0</AutoSort>
   </MPERuleToMST>
   <CommonEvent>
-    <CommonEventID>1030062</CommonEventID>
-    <MsgClassID>3400</MsgClassID>
-    <Name>Registry Changed</Name>
+    <CommonEventID>1035613</CommonEventID>
+    <MsgClassID>2900</MsgClassID>
+    <Name>Registry Monitoring Event - Modify</Name>
     <ShortDesc />
-    <DefRiskRating>0</DefRiskRating>
+    <DefRiskRating>3</DefRiskRating>
     <DateUpdated>2017-10-26T18:04:54.33-07:00</DateUpdated>
     <RecordStatus>1</RecordStatus>
   </CommonEvent>
