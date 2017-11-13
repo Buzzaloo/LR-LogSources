@@ -1,1 +1,0 @@
-(?<vmid>16)</eventid>.*?<level>(?<severity>[^<]+)</level>.*?<computer>(?<dname>[^<]+)</computer>[^>]+>[^>]+><EventData>[^>]+>[^>]+><Data Name='Configuration'>(?<object>[^<]+)</Data><Data Name='ConfigurationFileHash'>[^=]+=(?<hash>[^<]+)</Data></EventData></Event>
