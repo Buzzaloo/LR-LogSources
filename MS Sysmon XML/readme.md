@@ -8,6 +8,10 @@ This repository includes custom normalisation (MPE) rules for Microsoft's Sysmon
 *	parsing of LogonGuid into the Group field
 *   regex written in a way that makes customization easy is changes are required
 
+![Sysmon Processes Dashboard](https://github.com/lrchma/LR-LogSources/blob/master/MS%20Sysmon%20XML/Screenshots/Analyse-Sysmon-Processes.png?raw=true)
+
+![Sysmon Network Dashboard](https://github.com/lrchma/LR-LogSources/blob/master/MS%20Sysmon%20XML/Screenshots/Analyse-Sysmon-Network.png?raw=true)
+
 While these parsing rules are primarily written for collection over RPC, the regex will match against Sysmon logs sent via Syslog, such as from Splunk or Elastic agents.
 
 ### How to add XML Sysmon Logs?
