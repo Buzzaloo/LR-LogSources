@@ -29,24 +29,24 @@ The MPE rules have been written to be readable and easy to change.  While the mo
 
 ### MS Sysmon Event IDs
 As mentioned, these normalisation rules have been written for use with Microsoft Sysmon version 6:
-1	Process Create
-2	File creation time
-3	Network connection detected
-4	Sysmon service state change (cannot be filtered)
-5	Process terminated
-6	Driver Loaded
-7	Image loaded
-8	CreateRemoteThread detected
-9	RawAccessRead detected
-10	Process accessed
-11	File created
-12	Registry object added or deleted
-13	Registry value set
-14	Registry object renamed
-15	File stream created
-16	Sysmon configuration change (cannot be filtered)
-17	Named pipe created
-18	Named pipe connected
+* 1	Process Create
+* 2	File creation time
+* 3	Network connection detected
+* 4	Sysmon service state change (cannot be filtered)
+* 5	Process terminated
+* 6	Driver Loaded
+* 7	Image loaded
+* 8	CreateRemoteThread detected
+* 9	RawAccessRead detected
+* 10	Process accessed
+* 11	File created
+* 12	Registry object added or deleted
+* 13	Registry value set
+* 14	Registry object renamed
+* 15	File stream created
+* 16	Sysmon configuration change (cannot be filtered)
+* 17	Named pipe created
+* 18	Named pipe connected
 
 ### Filtering with Microsoft Sysmon
 MS Sysmon should always be used with a filter and configuration XML file.  The default configuration can be excessively noisy.  The recommended resource to deploy your MS Sysmon configuration off of is from @SwiftOnSecurity, available here - https://github.com/SwiftOnSecurity/sysmon-config
