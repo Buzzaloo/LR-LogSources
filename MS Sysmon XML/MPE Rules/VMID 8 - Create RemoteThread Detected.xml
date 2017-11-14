@@ -3,7 +3,7 @@
   <ExportInfo>
     <ExportConsoleVersion>7.3.1.0</ExportConsoleVersion>
     <KBVersion>7.1.413.4</KBVersion>
-    <DateExported>2017-11-12T12:26:29.1219009-08:00</DateExported>
+    <DateExported>2017-11-12T19:09:03.7650967-08:00</DateExported>
     <ExportLicense>646</ExportLicense>
     <ExportUser>logrhythmadmin</ExportUser>
   </ExportInfo>
@@ -28,7 +28,7 @@
     <DefFalseAlarmRating>0</DefFalseAlarmRating>
     <InheritTech>1</InheritTech>
     <RecordStatus>1</RecordStatus>
-    <DateUpdated>2017-11-11T02:13:03.78-08:00</DateUpdated>
+    <DateUpdated>2017-11-13T03:08:58.66-08:00</DateUpdated>
     <SortOrder>1</SortOrder>
     <VersionMajor>6</VersionMajor>
     <VersionMinor>1</VersionMinor>
@@ -43,11 +43,11 @@
   </MPERule>
   <MPERuleRegex>
     <MPERuleRegexID>1000000016</MPERuleRegexID>
-    <RegexTagged>(?&lt;vmid&gt;8)&lt;/eventid&gt;.*?&lt;level&gt;(?&lt;severity&gt;[^&lt;]+)&lt;/level&gt;.*?&lt;computer&gt;(?&lt;dname&gt;[^&lt;]+)&lt;/computer&gt;[^&gt;]+&gt;[^&gt;]+&gt;&lt;EventData&gt;[^&gt;]+&gt;[^&gt;]+&gt;&lt;Data Name='SourceProcessGuid'&gt;{(?&lt;session&gt;[^}]+)}&lt;/Data&gt;&lt;Data Name='SourceProcessId'&gt;(?&lt;processid&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='SourceImage'&gt;(?&lt;object&gt;.*\\)?(?&lt;process&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='TargetProcessGuid'&gt;(?&lt;tag1&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='TargetProcessId'&gt;(?&lt;tag2&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='TargetImage'&gt;(?&lt;objectname&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='NewThreadId'&gt;(?&lt;tag4&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='StartAddress'&gt;[^&lt;]+&lt;/Data&gt;&lt;Data Name='[^&lt;]+'&gt;&lt;/Data&gt;&lt;Data Name='[^&lt;]+'&gt;&lt;/Data&gt;&lt;/EventData&gt;&lt;/Event&gt;</RegexTagged>
+    <RegexTagged>(?&lt;vmid&gt;8)&lt;/eventid&gt;.*?&lt;level&gt;(?&lt;severity&gt;[^&lt;]+)&lt;/level&gt;.*?&lt;computer&gt;(?&lt;dname&gt;[^&lt;]+)&lt;/computer&gt;[^&gt;]+&gt;[^&gt;]+&gt;&lt;EventData&gt;[^&gt;]+&gt;[^&gt;]+&gt;&lt;Data Name='SourceProcessGuid'&gt;{(?&lt;session&gt;[^}]+)}&lt;/Data&gt;&lt;Data Name='SourceProcessId'&gt;(?&lt;parentprocessid&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='SourceImage'&gt;(?&lt;parentprocesspath&gt;.*\\)?(?&lt;parentprocessname&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='TargetProcessGuid'&gt;(?&lt;tag1&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='TargetProcessId'&gt;(?&lt;processid&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='TargetImage'&gt;(?&lt;object&gt;.*\\)?(?&lt;processname&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='NewThreadId'&gt;(?&lt;tag4&gt;[^&lt;]+)&lt;/Data&gt;&lt;Data Name='StartAddress'&gt;[^&lt;]+&lt;/Data&gt;&lt;Data Name='[^&lt;]+'&gt;&lt;/Data&gt;&lt;Data Name='[^&lt;]+'&gt;&lt;/Data&gt;&lt;/EventData&gt;&lt;/Event&gt;</RegexTagged>
     <IgnoreCase>1</IgnoreCase>
     <Multiline>0</Multiline>
     <RecordStatus>1</RecordStatus>
-    <DateUpdated>2017-11-11T02:13:03.78-08:00</DateUpdated>
+    <DateUpdated>2017-11-13T03:08:58.63-08:00</DateUpdated>
     <PerfMonMode>1</PerfMonMode>
     <VersionMajor>6</VersionMajor>
     <VersionMinor>1</VersionMinor>
