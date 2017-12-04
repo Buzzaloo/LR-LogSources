@@ -104,7 +104,7 @@
 			<ParentImage condition="is">C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeC2RClient.exe</ParentImage> <!--Microsoft:Office: Background process-->
 			<!--SECTION: Google-->
 			<CommandLine condition="begin with">"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --type=</CommandLine> <!--Google:Chrome: massive command-line arguments-->
-			<CommandLine condition="begin with">"C:\Program Files\Google\Chrome\Application\chrome.exe" --type=</CommandLine> <!--Google:Chrome: massive command-line arguments-->
+			<CommandLine condition="begin with">"C:\Program Files\Google\Chrome\Application\chrome.exe" --type=</CommandLine> <!--Google:Chrome: massive command-line arguments-->		
 			<Image condition="begin with">C:\Program Files (x86)\Google\Update\</Image> <!--Google:Chrome: Updater-->
 			<ParentImage condition="begin with">C:\Program Files (x86)\Google\Update\</ParentImage> <!--Google:Chrome: Updater-->
 			<!--SECTION: Firefox-->
@@ -164,6 +164,7 @@
 		<FileCreateTime onmatch="exclude">
 			<Image condition="image">OneDrive.exe</Image> <!--OneDrive constantly changes file times-->
 			<Image condition="contains">setup</Image> <!--Ignore setups-->
+			<Image condition="image">chrome.exe</Image> <!--Chrome frequently changes file times-->			
 		</FileCreateTime>
 
 	<!--SYSMON EVENT ID 3 : NETWORK CONNECTION INITIATED-->
@@ -265,14 +266,20 @@
 		<ImageLoad onmatch="include">
 			<ImageLoaded condition="is">C:\Windows\System32\advapi32.dll</ImageLoaded>
 			<ImageLoaded condition="is">C:\Windows\System32\crypt32.dll</ImageLoaded>
-		<!--COMMENT:	Can cause high system load, disabled by default, important examples included below.-->
 		</ImageLoad>
-
+		<!--COMMENT:	Can cause high system load, disabled by default, important examples included below-->
+		<ImageLoad onmatch="exclude">
+			<ImageLoaded condition="contains">\chrome.exe</ImageLoaded>
+			<ImageLoaded condition="contains">\LogRhythm</ImageLoaded>	
+			<ImageLoaded condition="contains">WmiPrvSE.exe</ImageLoaded>
+		</ImageLoad>
+		
 	<!--SYSMON EVENT ID 8 : REMOTE THREAD CREATED-->
 		<!--DATA: UtcTime, SourceProcessGuid, SourceProcessId, SourceImage, TargetProcessId, TargetImage, NewThreadId, StartAddress, StartModule, StartFunction-->
 	<CreateRemoteThread onmatch="include">
 		<SourceImage condition="contains">AppData</SourceImage>
-		<SourceImage condition="contains">Temp</SourceImage>		
+		<SourceImage condition="contains">Temp</SourceImage>
+		<SourceImage condition="contains">Users</SourceImage>		
 	</CreateRemoteThread>
 
 	<!--SYSMON EVENT ID 9 : RAW DISK ACCESS-->
@@ -542,6 +549,10 @@
 		<PipeEvent onmatch="exclude">
 			<!--ADDITIONAL REFERENCE: [ https://www.cobaltstrike.com/help-smb-beacon ] -->
 			<!--ADDITIONAL REFERENCE: [ https://blog.cobaltstrike.com/2015/10/07/named-pipe-pivoting/ ] -->
+			<Image condition="begin with">C:\Program Files\LogRhythm</Image> <!--LogRhythm default installation location, covers all services-->			
+			<Image condition="begin with">C:\Program Files\Microsoft SQL Server</Image> <!--LogRhythm default installation location, covers all services-->
+			<Image condition="begin with">C:\Program Files (x86)\Google\Chrome\Application</Image> <!--LogRhythm default installation location, covers all services-->
+			<PipeName condition="is">\netmon</PipeName>
 		</PipeEvent>
 
 	</EventFiltering>

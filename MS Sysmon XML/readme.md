@@ -1,10 +1,10 @@
 # Microsoft Sysmon XML Format
 
-This repository includes custom normalisation (MPE) rules for Microsoft's Sysmon (MS Sysmon), v6+, in the LogRhythm Platform. The difference from in-built ruleset available with LogRhythm is that these rules use the Windows native XML format, which is more performant, and make use of the enhanced 7.2.x schema metadata fields.  Other customizations include:
+This repository includes a custom LogRhythm App for Microsoft's Sysmon (MS Sysmon) v6+.  The App includes custom MPE rules, dashboards, analyse layouts, and documentation around the MDI implementation.  The difference with this Sysmon App from that of the in-built Sysmon ruleset available with LogRhythm is a) these rules use the Windows native XML format, which is more performant b) make use of the enhanced 7.2.x schema metadata fields.  Other customizations include:
 
 *	parsing ProcessGuid into the Session metadata field
 *	parsing all parent process information into parent process, parent process id, and parent process path fields
-*	extracting one Hash value, SHA1 from all events - this is an important Sysmon configuration requirement
+*	extracting one Hash value, SHA1 from all events - this requires Sysmon be configured accordingly
 *	parsing of LogonGuid into the Group field
 *   regex written in a way that makes customization easy is changes are required
 
