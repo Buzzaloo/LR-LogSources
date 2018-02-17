@@ -1,0 +1,1 @@
+userAgent:(*crawler* OR *spider* OR *curl* OR *wxdownload* OR *bot*) AND NOT userAgent:(*googlebot* OR *bingbot*)
